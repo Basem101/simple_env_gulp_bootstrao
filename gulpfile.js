@@ -1,9 +1,10 @@
 // including plugins
-    var gulp      = require('gulp');
-        less      = require("gulp-less"),
-        minifycss = require('gulp-minify-css'),
-        rename    = require('gulp-rename'),
-        plumber   = require('gulp-plumber'),
+    var gulp          = require('gulp');
+        less          = require("gulp-less"),
+        minifycss     = require('gulp-minify-css'),
+        rename        = require('gulp-rename'),
+        plumber       = require('gulp-plumber'),
+        autoprefixer  = require('gulp-autoprefixer');
 
     // Task - Compiles Unchained Less Files
     gulp.task('compile-bp-less', function () {
@@ -13,7 +14,8 @@
       .pipe(gulp.dest('static/css'))
       .pipe(rename({suffix: '.min'}))
       .pipe(minifycss())
-      .pipe(gulp.dest('static/css'));
+      .pipe(gulp.dest('static/css'))
+      .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'));
     });
 
     // Task - Watches Unchained + bp Less Files

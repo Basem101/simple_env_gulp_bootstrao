@@ -1,7 +1,7 @@
 {
-  "name": "easy-unchained",
+  "name": "",
   "version": "0.0.1",
-  "description": "easy-unchained",
+  "description": "easy",
   "main": "index.js",
   "dependencies": {
     "grunt-cli": "~0.1.13",
@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gale43/Easy-Unchained.git"
+    "url": ""
   },
   "author": "Gale Partners",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/gale43/Easy-Unchained/issues"
+    "url": ""
   }
 }
